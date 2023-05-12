@@ -45,8 +45,9 @@ public class HelloWorld {
 
 
 
-
-
+//        Statements end with a semicolon ;
+//        There are two main categories of types in Java: primitive and reference.
+//        There are 8 primitive data types in Java
 
 
     }
