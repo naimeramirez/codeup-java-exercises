@@ -58,6 +58,7 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
 
 //        String userInput;
+//        boolean confirm = true; // instead of string use boolean
 
 //        do {
 //            System.out.print("What number would you like to go up to? ");
@@ -70,14 +71,15 @@ public class ControlFlowExercises {
 //            for (int i = 1; i <= num; i++) {
 //                int squared = i * i;
 //                int cubed = i * i * i;
-//                System.out.printf("%-6d | %-7d | %-5d%n", i, squared, cubed);
+//                System.out.printf("%-6d | %-7d | %-5d\n", i, squared, cubed);
 //            }
 //
 //            System.out.print("\nDo you want to continue? (y/n) ");
-//            userInput = sc.next();
-//        } while (userInput.equalsIgnoreCase("y"));
+//            confirm = sc.next().equalsIgnoreCase("y");
+//        } while (confirm);
 
-        String userInput;
+
+        boolean confirm = true;
 
         do {
             int gradeNum = 0;
@@ -103,8 +105,8 @@ public class ControlFlowExercises {
             System.out.println("Your grade is: " + gradeLetter);
 
             System.out.println("Do you want to continue?");
-            userInput = sc.next();
-        } while (userInput.equals("y"));
+            confirm = sc.next().equalsIgnoreCase("y");
+        } while (confirm);
 
 
     }
