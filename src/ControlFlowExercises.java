@@ -79,7 +79,7 @@ public class ControlFlowExercises {
 //        } while (confirm);
 
 
-        boolean confirm = true;
+        String confirm;
 
         do {
             int gradeNum = 0;
@@ -105,8 +105,9 @@ public class ControlFlowExercises {
             System.out.println("Your grade is: " + gradeLetter);
 
             System.out.println("Do you want to continue?");
-            confirm = sc.next().equalsIgnoreCase("y");
-        } while (confirm);
+            confirm = sc.nextLine();
+
+        } while (confirm.equals("y"));
 
 
     }
