@@ -33,6 +33,26 @@ public class MethodsExercises {
 //        System.out.println(result);
 //    }
 //
+//    public static void multiplication (int x, int y) {
+//        int result = x * y;
+//        System.out.println(result);
+//          int sum = 0;
+//          for (int i = 0; i < y; i++) {
+//          sub += x;
+//          }
+//          return sum;
+//    }
+//
+//    public static void multiplication (int x, int y) {
+//        if(y == 0) {
+//            return 0;
+//        }
+//        if (y == 1) {
+//            return x;
+//        }
+//        return x + multiplication(x, y - 1);
+//    }
+//
 //    public static void division (int x, int y) {
 //        int result = x / y;
 //        System.out.println(result);

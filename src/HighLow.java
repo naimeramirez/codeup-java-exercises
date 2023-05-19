@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class HighLow {
     public static void main(String[] args) {
         int randomNum = (int) (Math.random() * 100 + 1);
-        System.out.println(randomNum);
+//        System.out.println(randomNum);
 
-        guessNum(3, randomNum);
+        guessNum(11, randomNum);
     }
 
     public static void guessNum(int guesses, int randomNum) {
