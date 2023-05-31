@@ -34,15 +34,19 @@ public class Input {
         return scanner.nextInt();
     }
 
-    public double getDouble (int min, int max) {
+    public double getDouble (double min, double max) {
         while (true) {
             System.out.println("Enter number between " + min + " - " + max);
 
-            double userInput = scanner.nextDouble();
-            if (userInput >= min && userInput <= max) {
-                return userInput;
+            String userInput = getString();
+            try {
+                double userNum = Double.valueOf(userInput);
+                if (userNum >= min && userNum <= max) {
+                    return userNum;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid number");
             }
-            System.out.println("Invalid number");
         }
     }
 
