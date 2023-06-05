@@ -54,4 +54,37 @@ public class Input {
         return scanner.nextDouble();
     }
 
+    public int getInt(String s, int x, int y) {
+        while (true) {
+            System.out.println("Please enter a number between " + s + " and " + y);
+            String userInput = getString();
+            try {
+                int num = Integer.valueOf(userInput);
+                if (num < x || num > y) {
+                    System.out.println("Input out of range. Please try again.");
+                } else {
+                    return num;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please try again.");
+            }
+        }
+    }
+
+    public double getDouble(String s, double x, double y) {
+        while (true) {
+            System.out.println("Please enter a number between " + s + " and " + y);
+            String userInput = getString();
+            try {
+                double num = Double.valueOf(userInput);
+                if (num < x || num > y) {
+                    System.out.println("Input out of range. Please try again.");
+                } else {
+                    return num;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please try again.");
+            }
+        }
+    }
 }

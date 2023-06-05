@@ -30,6 +30,5 @@ public class InputTest {
         System.out.println("Double: " + userDouble);
 
 
-
     }
 }
